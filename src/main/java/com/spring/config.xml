@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- this is beans -->
+    <bean class="com.sprin.beansDemo" name="Student">
+        <property name="id">
+            <value>12</value>
+        </property>
+        <property name="name">
+            <value>John</value>
+        </property>
+        <property name="address">
+            <value>New York</value>
+        </property>
+    </bean>
+</beans>
