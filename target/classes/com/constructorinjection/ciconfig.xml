@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="
+ http://www.springframework.org/schema/context"
+    xmlns:p="http://www.springframework.org/schema/p"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+                        https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
+    <!-- this is beans -->
+    <bean class="com.constructorinjection.Person" name="person">
+        <constructor-arg value="Lilly"/>
+        <!-- type is used to remove ambiguity when there are two or more constructors  -->
+        <constructor-arg value="24" type="int"/>
+    </bean>
+</beans>
