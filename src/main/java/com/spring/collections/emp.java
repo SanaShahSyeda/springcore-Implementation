@@ -2,6 +2,7 @@ package com.spring.collections;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Properties;
 import java.util.Set;
 
 public class emp {
@@ -9,9 +10,18 @@ public class emp {
     private List<String> phones;
     private Set<String> addresses;
     private Map<String, String> courses;
+    private Properties props;
 
     public String getName() {
         return name;
+    }
+
+    public Properties getProps() {
+        return this.props;
+    }
+
+    public void setProps(Properties props) {
+        this.props = props;
     }
 
     public void setName(String name) {

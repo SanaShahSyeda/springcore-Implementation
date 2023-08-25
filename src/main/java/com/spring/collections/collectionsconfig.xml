@@ -8,7 +8,7 @@
                       https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
 
   <bean name="emp1" class="com.spring.collections.emp">
-    <property name="name" value="Sam" />
+    <property name="name" value="Sam"/>
     <property name="phones">
       <list>
         <value>2323</value>
@@ -29,6 +29,14 @@
         <entry key="HTML" value="1Month" />
         <entry key="React" value="3Months" />
       </map>
+    </property>
+    <property name="props">
+      <props>
+        <prop key="username">johnson</prop>
+        <prop key="password">johnJOHN123$</prop>
+      </props>
+      
+
     </property>
   </bean>
 

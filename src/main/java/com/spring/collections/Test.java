@@ -11,7 +11,8 @@ public class Test {
         ApplicationContext context = new ClassPathXmlApplicationContext(
                 "com/spring/collections/collectionsconfig.xml");
         emp emp1 = (emp) context.getBean("emp1");
-        System.out.println(emp1);
+        System.out.println(emp1.getName());
+        System.out.println(emp1.getProps());
     }
 
 }
