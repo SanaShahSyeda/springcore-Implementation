@@ -1,4 +1,4 @@
-package com.spring.collections;
+package com.collections;
 
 import java.util.List;
 import java.util.Map;

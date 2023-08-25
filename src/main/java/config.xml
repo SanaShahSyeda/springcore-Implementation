@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
     
     <!-- this is beans -->
-    <bean class="com.sprin.beansDemo" name="Student">
+    <bean class="com.spring.beansDemo" name="Student">
         <property name="id">
             <value>12</value>
         </property>

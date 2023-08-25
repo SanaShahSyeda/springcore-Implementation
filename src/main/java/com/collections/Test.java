@@ -1,4 +1,4 @@
-package com.spring.collections;
+package com.collections;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -9,10 +9,9 @@ public class Test {
         System.out.println("Hello World!");
 
         ApplicationContext context = new ClassPathXmlApplicationContext(
-                "com/spring/collections/collectionsconfig.xml");
+                "com/collections/configcollections.xml");
         emp emp1 = (emp) context.getBean("emp1");
         System.out.println(emp1.getName());
         System.out.println(emp1.getProps());
     }
-
 }

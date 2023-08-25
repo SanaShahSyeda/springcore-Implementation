@@ -7,7 +7,7 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
                       https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
 
-  <bean name="emp1" class="com.spring.collections.emp">
+  <bean name="emp1" class="com.collections.emp">
     <property name="name" value="Sam"/>
     <property name="phones">
       <list>
@@ -35,8 +35,6 @@
         <prop key="username">johnson</prop>
         <prop key="password">johnJOHN123$</prop>
       </props>
-      
-
     </property>
   </bean>
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:context="
+ http://www.springframework.org/schema/context"
+  xmlns:p="http://www.springframework.org/schema/p"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
+                      https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">   
+    <!-- this is beans -->
+    <bean name="bref" class="com.ref.B">
+        <property name="y" value="13"/>
+    </bean>
+    <!-- referrence injection -->
+    
+    <!-- used as a p:schema -->
+    <bean name="aref" class="com.ref.A"  p:x='32' p:ob-ref="bref" >
+        <!-- <property name="x" value="32"/> -->
+        <!-- used as element -->
+        <!-- <property name="ob"> <ref bean="bref"/></property> -->
+        <!-- used as an attribute -->
+        <!-- <property name="ob" ref="bref"></property> -->
+    </bean>
+</beans>
