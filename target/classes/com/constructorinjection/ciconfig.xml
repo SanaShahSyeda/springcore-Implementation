@@ -8,12 +8,18 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
                         https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
  
-    <bean class="com.constructorinjection.Certi" name="cer" c:name="Python for AI">
+    <bean class="com.constructorinjection.Certi" name="cer" c:certiname="Python for AI">
     </bean>
     <bean class="com.constructorinjection.Person" name="person">
         <constructor-arg value="Lilly" />
         <!-- type is used to remove ambiguity when there are two or more constructors -->
         <constructor-arg value="24" type="int" />
         <constructor-arg ref="cer" />
+        <constructor-arg>
+            <list>
+                <value>hello</value>
+                 <value>programmer</value>
+            </list>
+        </constructor-arg>
     </bean>
 </beans>

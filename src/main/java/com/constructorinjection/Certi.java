@@ -1,16 +1,16 @@
 package com.constructorinjection;
 
 public class Certi {
-    public String name;
+    public String certiname;
 
-    public Certi(String name) {
-        this.name = name;
+    public Certi(String certiname) {
+        this.certiname = certiname;
     }
 
     @Override
     public String toString() {
         return "{" +
-                " name='" + this.name + "'" +
+                " certiname='" + this.certiname + "'" +
                 "}";
     }
 
