@@ -22,4 +22,9 @@
             </list>
         </constructor-arg>
     </bean>
+    <bean class="com.constructorinjection.Adittion" name="Add">
+        <constructor-arg value="12"/>
+        <constructor-arg value="24" type="int"/>
+    </bean>
+
 </beans>

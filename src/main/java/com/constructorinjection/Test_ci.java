@@ -11,6 +11,8 @@ public class Test_ci {
                 "com/constructorinjection/ciconfig.xml");
         Person person1 = (Person) context.getBean("person");
         System.out.println(person1);
+        Adittion ad = (Adittion) context.getBean("Add");
+        ad.sum();
 
     }
 }
