@@ -1,5 +1,5 @@
 # Spring Core 
-# •	Open source.
+* •	Open source *
 # •	Lightweight.
 # •	Written in java.
 # •	Framework of frameworks.
