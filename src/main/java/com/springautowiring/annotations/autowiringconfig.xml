@@ -7,9 +7,14 @@
 
 <context:annotation-config/>
 
-    <bean class="com.springautowiring.annotations.Address" name="address">
+    <bean class="com.springautowiring.annotations.Address" name="address1">
         <property name="street" value="3F" />
         <property name="city" value="Los angeles"/>
+    </bean>
+
+    <bean class="com.springautowiring.annotations.Address" name="address2">
+        <property name="street" value="EE-D" />
+        <property name="city" value="London"/>
     </bean>
 
     <bean class="com.springautowiring.annotations.employee" name="employee"/>

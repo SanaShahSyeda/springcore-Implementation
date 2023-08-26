@@ -1,9 +1,12 @@
 package com.springautowiring.annotations;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class employee {
-
+    @Autowired
+    @Qualifier("address2")
+    // @Qualifier used to show which bean object to use
     private Address address;
 
     public employee() {
@@ -18,7 +21,6 @@ public class employee {
         return this.address;
     }
 
-    @Autowired
     public void setAddress(Address address) {
         System.out.println("Through setter method ----");
         this.address = address;
