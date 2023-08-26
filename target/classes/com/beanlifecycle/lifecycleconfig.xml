@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:context="
- http://www.springframework.org/schema/context"
-    xmlns:p="http://www.springframework.org/schema/p"
-    xmlns:c="http://www.springframework.org/schema/c"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
-                        https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- <bean class="com.beanlifecycle.springbean" name="lifecycle1" init-method="init" destroy-method="destroy">
+    <!-- Enable all annotations -->
+    <!-- <context:annotation-config /> -->
+
+    <!-- <bean class="com.beanlifecycle.springbean" name="lifecycle1" init-method="init"
+    destroy-method="destroy">
         <property name="price" value="10" />
-    </bean> -->
+    </bean>
 
     <bean class="com.beanlifecycle.springbean_2" name="lifecycle2">
         <property name="price" value="60"/>
-    </bean>    
+    </bean>     -->
 
+    <bean class="com.beanlifecycle.springbean_3" name="lifecycle3">
+        <property name="subject" value="springboot" />
+    </bean>
+
+    <!-- enabling only @PostConstruct & @PreDestroy -->
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
 
 </beans>
