@@ -23,7 +23,8 @@
         </constructor-arg>
     </bean>
     <bean class="com.constructorinjection.Adittion" name="Add">
-        <constructor-arg value="12"/>
+        <!-- making 12 a second argument by giving index1 -->
+        <constructor-arg value="12" type="int" index="1"/>
         <constructor-arg value="24" type="int"/>
     </bean>
 
