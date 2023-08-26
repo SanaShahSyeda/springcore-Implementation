@@ -18,7 +18,7 @@
 + o	Read and use the beans.
 + o	Destroy() method called.
 + o	Bean object ended.
-+ •	Configuration Technique
+### Configuration Technique
 #### o	XML
 #### o	Spring interface
 + 	Initializing Bean: for init() method
@@ -30,7 +30,6 @@
  + 	Note that both the @PostConstruct and @PreDestroy annotations are part of Java EE. If you are using java 9 and above, add an additional dependency in “pom.xml” to use these annotations.
 
 * 	Annotations are disabled by default, to enable annotations
-+  o	All annotations: “<context:annotation-config>”
-+  o	Only @PostConstruct and @PreDestroy :
-+ “<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>” 
++  o	All annotations:“<context:annotation-config>”
++  o	Only @PostConstruct and @PreDestroy:<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>” 
 
