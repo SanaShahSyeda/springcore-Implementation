@@ -2,23 +2,23 @@
 + •	Open source 
 + •	Lightweight.
 + •	Written in java.
- •	Framework of frameworks.
- •	Enterprise and internet support.
- •	Provides pattern and structure for java.
- •	It manages object instances (Application context).
- •	Used to make java application loosely coupled (easy to change).
++ •	Framework of frameworks.
++ •	Enterprise and internet support.
++ •	Provides pattern and structure for java.
++ •	It manages object instances (Application context).
++ •	Used to make java application loosely coupled (easy to change).
 ## Life Cycle Method of Beans -------------- >>
- •	Spring provide two important methods to every bean.
- •	public void init (): for initialization code.
- •	public void destroy(): for cleanup code.
++ •	Spring provide two important methods to every bean.
++ •	public void init (): for initialization code.
++ •	public void destroy(): for cleanup code.
 ### •	Life Cycle
- o	Bean object created with metadata of configuration XML file.
- o	Set properties values.
- o	Init() method called.
- o	Read and use the beans.
- o	Destroy() method called.
- o	Bean object ended.
- •	Configuration Technique
++ o	Bean object created with metadata of configuration XML file.
++ o	Set properties values.
++ o	Init() method called.
++ o	Read and use the beans.
++ o	Destroy() method called.
++ o	Bean object ended.
++ •	Configuration Technique
 #### o	XML
 
 * •	    <bean class="com.beanlifecycle.springbean" name="lifecycle1" init-method="init" destroy-method="destroy">
