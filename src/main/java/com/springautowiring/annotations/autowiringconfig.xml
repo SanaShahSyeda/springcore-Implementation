@@ -5,25 +5,12 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!-- Enable all annotations -->
-    <!-- <context:annotation-config /> -->
+<context:annotation-config/>
 
-
-    <!-- name="" it sould be same as declared in class,
-     in case of autowire byName -->
-    <bean class="com.springautowiring.annotations.Address" name="address1">
+    <bean class="com.springautowiring.annotations.Address" name="address">
         <property name="street" value="3F" />
         <property name="city" value="Los angeles"/>
     </bean>
-  
-    <!-- using byType, with 2 different Address beans leads to errror -->
-    <!-- <bean class="com.springautowiring.Address" name="address2">
-        <property name="street" value="2D" />
-        <property name="city" value="London"/>
-    </bean> -->
 
-    <bean class="com.springautowiring.employee" name="employee" autowire="constructor">
-
-    </bean>
-
+    <bean class="com.springautowiring.annotations.employee" name="employee"/>
 </beans>

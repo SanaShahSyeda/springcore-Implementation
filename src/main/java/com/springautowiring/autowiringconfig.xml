@@ -11,7 +11,7 @@
 
     <!-- name="" it sould be same as declared in class,
      in case of autowire byName -->
-    <bean class="com.springautowiring.Address" name="address1">
+    <bean class="com.springautowiring.annotations.Address" name="address1">
         <property name="street" value="3F" />
         <property name="city" value="Los angeles"/>
     </bean>
