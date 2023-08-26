@@ -20,7 +20,6 @@
 + o	Bean object ended.
 + •	Configuration Technique
 #### o	XML
-
 + •	    <bean class="com.beanlifecycle.springbean" name="lifecycle1" init-method="init" destroy-method="destroy">
 + •	        <property name="price" value="10" />
 + •	    </bean> 
@@ -33,7 +32,6 @@
  + 	@PostConstruct: for init() method
  + 	@PreDestroy: for destroy() method.
  + 	Note that both the @PostConstruct and @PreDestroy annotations are part of Java EE. If you are using java 9 and above, add an additional dependency in “pom.xml” to use these annotations:
-
 + •	    <dependency>
 + •	      <groupId>javax.annotation</groupId>
 + •	      <artifactId>javax.annotation-api</artifactId>
