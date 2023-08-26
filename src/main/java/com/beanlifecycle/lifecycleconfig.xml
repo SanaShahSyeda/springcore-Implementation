@@ -8,8 +8,13 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
                         https://www.springframework.org/schema/context https://www.springframework.org/schema/spring-context.xsd">
 
-    <bean class="com.beanlifecycle.springbean" name="lifecycle1" init-method="init" destroy-method="destroy">
+    <!-- <bean class="com.beanlifecycle.springbean" name="lifecycle1" init-method="init" destroy-method="destroy">
         <property name="price" value="10" />
-    </bean>
+    </bean> -->
+
+    <bean class="com.beanlifecycle.springbean_2" name="lifecycle2">
+        <property name="price" value="60"/>
+    </bean>    
+
 
 </beans>
