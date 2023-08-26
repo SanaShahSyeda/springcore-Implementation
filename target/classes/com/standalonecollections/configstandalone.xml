@@ -8,7 +8,7 @@
                       http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
                       http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">
 
-  <!-- Stand alone lists -->
+  <!-- Stand alone list -->
   <util:list list-class="java.util.LinkedList" id="myBestFriends">
     <value>John</value>
     <value>Jane</value>
@@ -16,15 +16,23 @@
     <value>Lilly</value>
   </util:list>
 
+ <!-- Stand alone HashMap -->
+  <util:map map-class="java.util.HashMap" id="myFeeStructures">
+    <entry key="Java" value="5000"/>
+    <entry key="HTML" value="10000"/>
+    <entry key="CSS" value="6000"/>
+  </util:map>
+
+  <!-- Stand alone Properties -->
+  <util:properties id="db">
+   <prop key="driver">com.mysql.driver</prop>
+   <prop key="username">john</prop>
+   <prop key="passoword">abc123</prop>
+  </util:properties>
 
   <bean class="com.standalonecollections.temp" name="person">
-    <!-- As an element -->
-    <!-- <property name="friends">
-      <ref bean="myBestFriends" />
-    </property> -->
-   
-    <!-- As an attribute -->
     <property name="friends" ref="myBestFriends"/>
-
+    <property name="feestructure" ref="myFeeStructures"/>
+    <property name="properties" ref="db"/>
   </bean>
 </beans>
