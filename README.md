@@ -1,7 +1,7 @@
 # Spring Core 
-* •	Open source 
- •	Lightweight.
- •	Written in java.
++ •	Open source 
++ •	Lightweight.
++ •	Written in java.
  •	Framework of frameworks.
  •	Enterprise and internet support.
  •	Provides pattern and structure for java.
